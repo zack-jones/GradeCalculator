@@ -1,0 +1,33 @@
+body {
+  background-color: #FE4A49;
+}
+.intro {
+  text-align: center;
+  background-color: #2AB7CA;
+  color: #F4F4F8;
+}
+.intro h4 {
+  color: #E6E6EA;
+}
+.content{
+  background-color: #2AB7CA;
+  padding-bottom: 50px;
+}
+.input-group {
+  margin-bottom: 10px;
+}
+.header h3 {
+  text-align: center;
+  white-space: nowrap;
+  color: #F4F4F8;
+}
+.input-group {
+  margin-left: auto;
+  margin-right: auto;
+}
+.result {
+  text-align: center;
+}
+#result, #complete, #potential, #remain {
+  color: white;
+}
