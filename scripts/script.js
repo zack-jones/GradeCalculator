@@ -34,3 +34,7 @@ function reset() {
     document.getElementById('remain').innerHTML = 0 + "%";
   }
 }
+function addGrade() {
+  var place = document.getElementsByClassName('grade').length + 1;
+  document.getElementById('grades').innerHTML += '<div class="row"><div class="col-md-3 col-md-offset-3"><div class="input-group"><input type="text" class="grade" placeholder=' + place + '></div></div><div class="col-md-3"><div class="input-group"><input type="text" class="percent" placeholder=""></div></div></div>';
+}
