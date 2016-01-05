@@ -16,7 +16,7 @@ function calculate() {
   function toGetAnA() {
 
     if (remain === 0){
-      document.getElementById('getA').innerHTML = "Your final grade is a " + sum; 
+      document.getElementById('getA').innerHTML = "Your final grade is a " + sum;
     }
     else {
       if (sum < 93) {
@@ -42,5 +42,5 @@ function reset() {
 }
 function addGrade() {
   var place = document.getElementsByClassName('grade').length + 1;
-  document.getElementById('grades').innerHTML += '<div class="row"><div class="col-md-3 col-md-offset-3"><div class="input-group"><input type="text" class="grade" placeholder=' + place + '></div></div><div class="col-md-3"><div class="input-group"><input type="text" class="percent" placeholder=""></div></div></div>';
+  document.getElementById('grades').innerHTML += '<div class="row"><div class="col-md-3 col-md-offset-3 col-xs-4"><div class="input-group"><input type="text" class="grade" placeholder=' + place + '></div></div><div class="col-md-3 col-xs-4"><div class="input-group"><input type="text" class="percent" placeholder=""></div></div></div>';
 }
