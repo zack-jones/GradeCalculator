@@ -14,11 +14,17 @@ function calculate() {
   document.getElementById('complete').innerHTML = percent + "%";
 
   function toGetAnA() {
-    if (sum < 93) {
-      goal = (93 - sum) / remain;
-      goal *= 100;
-      document.getElementById('potential').innerHTML = goal.toFixed(2);
-      document.getElementById('remain').innerHTML = remain + "%";
+
+    if (remain === 0){
+      document.getElementById('getA').innerHTML = "Your final grade is a " + sum; 
+    }
+    else {
+      if (sum < 93) {
+        goal = (93 - sum) / remain;
+        goal *= 100;
+        document.getElementById('potential').innerHTML = goal.toFixed(2);
+        document.getElementById('remain').innerHTML = remain + "%";
+      }
     }
   }
   toGetAnA();
