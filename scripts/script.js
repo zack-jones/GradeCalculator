@@ -1,11 +1,11 @@
 function calculate() {
   var sum = 0;
-  var percent = "";
+  var percent = 0;
   var remain = 0;
   var goal = 0;
   for (var i = 0; i < document.getElementsByClassName('grade').length; i++){
     sum += document.getElementsByClassName('grade')[i].value * document.getElementsByClassName('percent')[i].value;
-    percent += document.getElementsByClassName('percent')[i].value;
+    percent += 1 * document.getElementsByClassName('percent')[i].value;
   }
   sum = sum/100;
   remain = 100-percent;
